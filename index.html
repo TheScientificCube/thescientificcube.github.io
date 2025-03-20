@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Scientific Cube</title>
+    <title>Step Up With Biology</title>
     <style>
         * {
             margin: 0;
@@ -13,24 +13,40 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(45deg, #000, #2c003e, #5a189a);
+            background: linear-gradient(120deg, #0a0a0a, #2c003e, #7b2cbf);
             color: #fff;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .container {
             max-width: 600px;
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            transform: translateY(-10px);
+            animation: slideIn 1s ease-in-out forwards;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         h1 {
             color: #d4aaff;
-            text-shadow: 0 0 10px #d4aaff;
+            text-shadow: 0 0 15px #d4aaff;
             margin-bottom: 15px;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #d4aaff; }
+            to { text-shadow: 0 0 20px #ffffff; }
         }
         p {
             font-size: 18px;
@@ -39,7 +55,7 @@
         }
         a {
             color: #ffffff;
-            background: #5a189a;
+            background: #7b2cbf;
             padding: 12px 18px;
             border-radius: 5px;
             text-decoration: none;
@@ -47,19 +63,21 @@
             display: inline-block;
             transition: 0.3s;
             margin-top: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
         a:hover {
             background: #d4aaff;
             color: #000;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to The Scientific Cube!</h1>
+        <h1>Welcome to Step Up With Biology!</h1>
         <p>Your hub for small educational video snippets.</p>
         <p>The YouTube channel is <strong>coming soon!</strong> Stay tuned for updates.</p>
-        <a href="https://youtube.com/@thescientificcube?si=1tNDEjTwGCEsbPu1" target="_blank">Visit The Scientific Cube on YouTube</a>
+        <a href="https://youtube.com/@thescientificcube?si=1tNDEjTwGCEsbPu1" target="_blank">Visit Step Up With Biology on YouTube</a>
     </div>
 </body>
 </html>
